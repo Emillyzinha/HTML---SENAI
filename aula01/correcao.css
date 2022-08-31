@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+nav{
+    background-color: rgb(255, 0, 0);
+    border-bottom: 3px solid #f00;
+    height: 55px;
+    width: 100%;
+}
+
+.container{
+    width: 1200px;
+    border: 2px solid #f00;
+    height: 700px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section{
+    background-color: rgb(206, 153, 93);
+    height: 300px;
+    border-radius: 50px 50px 0 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: rgb(243, 49, 49);
+    color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.artigos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artigos article{
+    background-color: #fff !important;
+   /* width: 450px;
+    min-width: 550px;
+    max-width: 700px; */
+    width: 40%;
+    padding: 10px;
+}

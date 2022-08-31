@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #EAEDED;
+}
+
+.primeiro{
+    background-color: #0D0033;
+    width: 100%;
+    height: 45px;
+    display: flex;
+}
+
+nav{
+    background-color: #041860;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.amarelo{
+    background-color: #EBE479;
+    width: 80%;
+    height: 400px;
+    background: url(./images/bg.jpg);
+    background-size: cover;
+    margin: 0 auto 250px auto;
+}
+
+.container{
+    margin: auto;
+    width: 1386px;
+}
+
+.distancia_slide{
+    padding-top: 260px;
+}
+.cards{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+.foto1{
+    padding: 80px;
+    background: #fff;
+    margin-left: 95px;
+    margin-top: 80px;
+}
+
+.foto1 img{
+    width: 250px;
+}
+
+.duasfotos{
+    margin-left: 50px;
+}
+
+.foto2{
+    /* background-color: #F2FAFC; */
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    margin-top: 80px;
+    
+}
+
+.foto2 img{
+    width: 150%;
+    padding: auto;
+}
+
+.publicidade{
+    margin-left: 20%;
+    background: #fff;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.textop{
+    text-align: center;
+}
+
+.distancia_card{
+    padding-top: 60px;
+}
+.alugue{
+    font-weight: 600;
+}
+
+.foto3{
+    background: #fff;
+    padding: 30px;
+    margin-right: 13%;
+    margin-top: 13%;
+}
+
+.foto3 img{
+    width: 250px;
+}
+
+.oferta{
+   text-align: center;
+}
+
+.foto4{
+    padding:45px;
+    background: #fff;
+    margin-left: 50px;
+}
+
+.foto4 img{
+    width: 220px;
+}
+
+.foto5{
+    margin-top: 13%;
+    margin-left: 50px;
+    background-color: #fff;
+}
+
+.foto5 img{
+    width: 250px;
+    margin-top: 50%;
+}
+
+.descubra{
+    font-weight: 600;
+    font-size: 28px;
+    text-align: left;
+    padding-left: 40px;
+
+}
+
+.distancia_fotos{
+    padding-top: 60px;
+
+}
+
+.laranjinha{
+    text-align: center;
+    width: 96%;
+    margin: auto;
+    padding-left: 48px;
+}
+
+.laranja{
+    /* colocar os slides */
+    background-color: #fff;
+    padding-top: 60px;
+}
+
+.laranja img{
+    width: 200px;
+}
+
+.espaco{
+    padding-top: 60px;
+}
+
+.ultima{
+    /* text-align: center; */
+    width: 100%;
+    margin: auto;
+}
+
+.fotoult{
+    background: #fff;
+    padding: 30px 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.quaserodape{
+    /* background-color: #F5F5F5; */
+
+                /* como colocar borda em volta de um "vazio" */
+    border-top: 1px solid #D0D0D0;
+    border-bottom: 1px solid #D0D0D0;
+    background: #fff;
+    height: 110px;
+}
+
+.voltarinicio{
+    background: #37475A;
+    height: 40px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* margin-top: 1% #; */
+}
+
+.rodape{
+    background-color: #232F3E;
+    width: 1200px;
+    margin: auto;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conheca-nos{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    width: 45%;
+    padding: 20px 20px;
+    flex-direction: column; 
+    height: 100px;
+}
+
+.titulo{
+    font-weight: 600;
+}
+
+.dindin{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    width: 50%;
+    padding: 20px 20px;
+    flex-direction: column; 
+    height: 100px;
+}
+
+.choro{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 20px;
+    justify-content: space-between;
+    width: 50%;
+    align-items: left;
+    height: 100px;
+}
+
+.helphelp{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 20px;
+    justify-content: space-between;
+    width: 50%;
+    align-items: left;
+    height: 80px;
+}
+
+html{
+    font-size: 20px;
+}
+
+.rodape2{
+    background-color: #232F3E;
+    border-bottom: 1px solid #3A4553;
+}
+
+.rodape3{
+    width: 100%;
+    height: 150px;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape3 img{
+    margin-top: 1%;
+    width: 6%;
+}
+
+.quasefim{
+    color: #A7A5A7;
+    list-style: none;
+    justify-content: center;
+}
+
+.ultimamargem{
+    background-color: #131A22;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ultima{
+    color: #777576;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+}

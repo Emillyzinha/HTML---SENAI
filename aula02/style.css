@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: url("https://nubank.com.br/images-cms/1648571595-roxinho-basicos-flutuantes-lg-3x.png?w=1152&dpr=1&auto=compress&fm=webp");
+    /*background-size: cover;*/
+    background-repeat: top;
+    background-position: center 100px;
+}
+
+img {
+    width: 200px;
+    transition: all linear 0.3s;
+}
+
+img:hover{
+    opacity: 0.3;
+}
+
+.conteudo{
+    height: 100px;
+    overflow: hidden;
+}

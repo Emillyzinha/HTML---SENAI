@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #EAEDED;
+}
+
+nav{
+    width: 100%;
+    height: 45%;
+    background: #131921;
+    /* display: flex; */
+}
+
+.menu1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.topbar{
+    display: none;
+}
+.box_pesquisa{
+    width: 1000px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+}
+sub{
+    display: flex;
+    justify-content: space-around;
+    background-color: #232F3E;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    font-size: inherit;
+}
+
+.texto2{
+    list-style: none;
+    color: #ffffff;
+    display: contents;
+}
+
+.ofertadoDia{
+    display: flex;
+}
+
+.inteiro{
+    display: flex;
+}
+
+.texto3{
+    list-style: none;
+    color: #000000;
+}
+
+li{
+    color: aliceblue;
+    list-style: none;
+}
+
+.meio{
+    background-color: aqua;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 575px;
+    width: 1500px;
+    background: rgb(234,237,237);
+    background: linear-gradient(0deg, rgba(234,237,237,1) 0%, rgba(61,89,124,1) 37%, rgba(0,0,0,1) 100%, rgba(0,48,255,1) 100%);
+}
+
+.primeirasFotos{
+    display: flex;
+}
+
+.primeiroBranco{
+    background: rgb(255 255 255);
+    margin-left: 215px;
+    height: 250px;
+    padding: 69px;
+    width: 210px;
+    margin-top: -320px;
+}
+.primeiroBranco img{
+    margin-left: 9px;
+}
+
+.segundoBranco{
+    background: rgb(255 255 255);
+    margin-left: 19px;
+    /* margin-top: 80px; */
+    height: 250px;
+    padding: 69px;
+    width: 210px;
+    margin-top: -320px;
+}
+
+.segundoBranco img{
+    margin-left: 35px;
+}
+
+.terceiroBranco{
+    background: rgb(255 255 255);
+    margin-left: 19px;
+    /* margin-top: 80px; */
+    height: 250px;
+    padding: 69px;
+    width: 210px;
+    margin-top: -320px;
+}
+
+.terceiroBranco img{
+    width: 340px;
+    margin-top: 10%;
+    margin-left: -30%;
+}
+
+.quartoBranco{
+    background: rgb(255 255 255);
+    margin-left: 19px;
+    /* margin-top: 80px; */
+    height: 250px;
+    padding: 69px;
+    width: 210px;
+    margin-top: -320px;
+}
+
+.fotosLaranja img{
+    /* margin: 0 auto; */
+    margin-right: 100;
+}
+
+/* @media screen and (max-width:400px){ */
+@media screen and (max-width:400px){
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    body{
+        background-color: #EAEDED;
+    }
+    
+    nav{
+        
+    }
+
+    #burguer{
+        width: 30px;
+        height: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+
+    #burguer > div{
+        background-color: aliceblue;
+        height: 2px;
+        width: 23px;
+        border-radius: 15px;
+        transition: all ease-in.3s;
+        z-index: 999;
+    }
+
+    .topbar{
+        display: block;
+        align-items: center;    
+    }
+
+
+    .logoInicio{
+        
+    }
+    .logoInicio img{
+        width: 140px;
+    }
+
+    .meio{
+        /* width: 100%;
+        margin-left: 0;
+        margin-right: 0; */
+        display: none;
+    }
+    
+    .menu1{
+        display: none;
+    }
+
+    .primeiraParte{
+        display: flex;
+        flex-wrap: wrap;
+        height: 48px;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 97%;
+
+    }
+
+    .segundaParte{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        /* align-items: center; */
+    }
+
+    .box_pesquisa{
+        width: 88%;
+        border-radius: 9px;
+    }
+    sub{
+        position: relative;
+        overflow-x: scroll;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .texto2{
+        height: 27px;
+        width: 100%;
+        white-space: nowrap;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .ofertadoDia{
+        
+    }
+    
+    .texto3{
+        display: flex;
+    }
+    
+    li{
+        padding: 0 15px;
+    }
+
+    .ocultar_mobile{
+        display: none;
+    }
+    
+    .meio{
+        
+    }
+    
+    .primeirasFotos{
+        margin-top: 100%;
+    }
+    
+    .primeiroBranco{
+        
+    }
+    .primeiroBranco img{
+        
+    }
+    
+    .segundoBranco{
+        
+    }
+    
+    .segundoBranco img{
+        
+    }
+    
+    .terceiroBranco{
+        
+    }
+    
+    .terceiroBranco img{
+        
+    }
+    
+    .quartoBranco{
+        
+    }
+    
+    .fotosLaranja img{
+        
+    }
+}

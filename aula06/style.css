@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: #964b00;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 96%;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    min-width: 500px;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#burguer{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    align-items: flex-end;
+    cursor: pointer
+}
+
+#burguer > div{
+    background-color: aliceblue;
+    height: 5px;
+    width: 60px;
+    border-radius: 15px;
+    transition: all ease-in.3s;
+    z-index: 999;
+}
+
+#burguer > div:nth-child(2){
+    width: 40px;
+}
+
+#burguer > div:nth-child(3){
+    width: 20px;
+}
+
+#burguer:hover div{
+    background-color: chocolate;
+    width: 60px;
+}
+/* para o tracinho se mexer(junto com o all ease e cursor pointer) */
+
+#burguer.active > div:nth-child(1){
+    transform: rotate(45deg) translateY(10px);
+    width: 30px;
+}
+
+#burguer.active > div:nth-child(2){
+    transform: rotate(-45deg) translateY(-10px);
+    width: 30px;
+}
+
+#burguer.active > div:nth-child(3){
+    opacity: 0;
+}
+
+#menu-mobile{
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    /* margin-left: -100vw; */
+    transition: all linear .8s;
+    transform: translateY(-100%);
+    transition: all linear 3.s;
+}
+
+#menu-mobile.active{
+    /* margin-left: 0; */
+    transform: translateY(0)
+}
+
+#menu-mobile ul{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+
+#menu-mobile ul li{
+    padding: 20px;
+    border-bottom: 1px solid #f7f7f7;
+    width: 100%;
+}
+
+#box-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    padding: 15px;
+    border-radius: 35px;
+    width: 400px;
+    margin: 15px;
+    border: 1px solid #3333;
+}
+
+input:focus{
+    border: 1px solid rgb(255, 183, 0);
+}
+
+#box-produto a{
+    text-decoration: underline;
+    color: black;
+    background: rgb(254, 203, 0);
+    border-radius: 10px;
+    width: 267px;
+    font-size: 18px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#box-produto a:hover{
+    color: #fff;
+    background: #000;
+}
+
+#produtos > div{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}

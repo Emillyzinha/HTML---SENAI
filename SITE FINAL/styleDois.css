@@ -164,30 +164,69 @@ li{
     justify-content: center;
 }
 
-.descricaoNotebook li{
-    margin-top: 20%;
-    color: #000000;
-    font-size: xx-large;
-}
-
 .descricaoNotebook{
     margin-left: 20px;
+
+}
+
+.nomeNotebook{
+    margin-top: 16%;
+    color: #000000;
+    font-size: x-large;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    
 }
 
 .linhaH{
     /* background-color: #232F3E; */
     border-bottom: 1px solid #cccccc;
     margin-bottom: 20px;
+    margin-top: 3px;
 }
 
 .simbolors{
     /* top: -.75em; */
-    font-size: 13px;
-    font-family: "Amazon Ember",Arial,sans-serif
+    font-size: 15px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+
 }
 
 .simboloMaior{
     font-size: 30px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+.infoImagem{
+    margin-bottom: 20px;
+    display: flex;
+    /* display: contents; */
+    color: #000000;
+    margin-top: 13px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 13px;
+    justify-content: space-around;
+}
+
+.seila{
+    display: flex;
+}
+
+.info{
+    margin-bottom: 20px;
+    display: flex;
+    color: #000000;
+    margin-top: 13px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 13px;
+}
+
+.info2{
+    display: flex;
+    color: #000000;
+    margin-top: 13px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 13px;
+    justify-content: space-around;
 }
 
 .meio{

@@ -1,0 +1,956 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    font-family: "Amazon Ember",Arial,sans-serif;
+    cursor: pointer;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: #131921;
+    position: fixed;
+    top: 0;
+    /* display: flex; */
+}
+
+.menu1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7px;
+}
+.topbar{
+    display: none;
+}
+.box_pesquisa{
+    width: 1000px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+}
+sub{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    font-size: inherit;
+    position: fixed;
+    margin-top: 70px;
+}
+
+.texto2{
+    list-style: none;
+    color: #ffffff;
+    display: contents;
+}
+
+.logoInicio{
+    cursor: pointer;
+}
+
+#burguer{
+    width: 20px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+#burguer > div{
+    background-color: #000000;
+    height: 3px;
+    width: 60px;
+    border-radius: 15px;
+    transition: all ease-in.3s;
+    z-index: 999;
+}
+
+#burguer > div:nth-child(2){
+    width: 20px;
+}
+
+#burguer > div:nth-child(3){
+    width: 20px;
+}
+
+#burguer > div:nth-child(1){
+    width: 20px;
+}
+
+#burguer:hover div{
+    width: 45;
+}
+
+#burguer.active > div:nth-child(1){
+    transform: rotate(50deg) translateY(10px);
+    width: 30px;
+    margin-top: 1px;
+
+}
+
+#burguer.active > div:nth-child(2){
+    transform: rotate(-50deg) translateY(-10px);
+    width: 30px;
+    margin-top: 10px;
+}
+
+#burguer.active > div:nth-child(3){
+    opacity: 0;
+}
+
+#menuMobile{
+    display: none;
+}
+
+#menuDesktop{
+    position: fixed;
+    width: 400px;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: all linear .5s;
+    /* display: none; */
+}
+
+#menuDesktop.active{
+    margin-left: 0;
+    transform: translateY(0);
+    margin-top: 102px;
+    height: 107vh;;
+    background-color: white;
+}
+
+#menuDesktop ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+
+#menuDesktop ul li{
+    padding: 20px;
+    border-bottom: 1px solid #f7f7f7;
+    width: 100%;
+    margin-bottom: -6px;
+} 
+#menuDesktop ul li a{
+    text-decoration: none;
+}
+
+.menuPequeno1{
+    display: none;
+}
+
+.ofertadoDia{
+    display: flex;
+}
+
+.inteiro{
+    display: flex;
+}
+
+.texto3{
+    list-style: none;
+    color: #000000;
+}
+
+li{
+    color: aliceblue;
+    list-style: none;
+}
+
+a{
+        text-decoration: none;
+}
+
+.textoSub{
+    color: #000000;
+
+}
+
+hr{
+    color: #E1E1E1;
+}
+
+/* .centro{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 575px;
+    width: 1500px;
+} */
+
+.meio{
+    /* margin-top: 10%; */
+}
+
+h1{
+    /* margin-top: 70px; */
+    /* color: #000000; */
+    font-family: "Amazon Ember",Arial,sans-serif;
+    margin-top: 114px;
+    margin-left: 16%;
+    font-size: 37px;
+    
+}
+
+h2{
+    font-family: "Amazon Ember",Arial,sans-serif;
+    margin-top: 35px;
+    margin-left: 16%;
+    font-size: 35px;
+}
+
+.primeiraFileira{
+    margin-left: 14%;
+}
+
+.paraMargin{
+    margin-left: 17px;
+}
+
+.divMaisVendidos{
+    display: flex;
+}
+
+.imagemUmVendidos{
+    background-color: #F5F5F5;
+    /* background-color: #000000; */
+    height: 100px;
+    width: 100px;
+    padding: 100px;
+    margin-left: 10%;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemDoisVendidos{
+    background-color: #F5F5F5;
+    /* background-color: #000000; */
+    height: 100px;
+    width: 100px;
+    padding: 100px;
+    margin-left: 10%;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemDoisVendidos img{
+    height: 154px;
+}
+
+.imagemUmVendidos img{
+    height: 326px;
+}
+
+.valores1{
+    background-color: #FAFAFA;
+    margin-left: 10%;
+    height: 152px;
+    width: 300px;
+    align-items: center;
+    /* margin: 0px 20px; */
+}
+
+.simbolors1{
+    color: #000000;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    /* margin: 0px 20px; */
+    margin-left: 20px
+}
+
+.simbolors{
+    color: #000000;
+    /* top: -.75em; */
+    font-size: 15px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+.simboloMaior{
+    color: #000000;
+    font-size: 30px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+del{
+    color: #000000;
+    font-size: 16px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    margin: 0px 20px;
+}
+
+.descricaoBook{
+    color: #000000;
+    font-size: 18px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    margin: 0px 20px;
+}
+
+.voltarinicio{
+    background: #37475A;
+    height: 40px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 1%;
+}
+
+.rodape{
+    background-color: #232F3E;
+    width: 1200px;
+    margin: auto;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conheca-nos{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    width: 45%;
+    padding: 20px 20px;
+    flex-direction: column; 
+    height: 100px;
+}
+
+.titulo{
+    font-weight: 600;
+}
+
+.dindin{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    width: 50%;
+    padding: 20px 20px;
+    flex-direction: column; 
+    height: 100px;
+}
+
+.choro{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 20px;
+    justify-content: space-between;
+    width: 50%;
+    align-items: left;
+    height: 100px;
+}
+
+.help{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 20px;
+    justify-content: space-between;
+    width: 50%;
+    align-items: left;
+    height: 80px;
+    font-size: smaller;
+}
+
+html{
+    font-size: 20px;
+}
+
+.rodape2{
+    background-color: #232F3E;
+    border-bottom: 1px solid #3A4553;
+}
+
+.rodape3{
+    width: 100%;
+    height: 150px;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+}
+
+.rodape3 img{
+    margin-top: 1%;
+    width: 6%;
+}
+
+.quasefim{
+    color: #cfcfcf;
+    list-style: none;
+    justify-content: center;
+}
+
+.ultimamargem{
+    display: none;
+    background-color: #131A22;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: small;
+}
+
+.penultima{
+    display: flex;
+    justify-content: center;
+}
+
+.ultima{
+    color: #777576;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.voltarinicioMobile{
+    display: none;
+}
+
+.rodapeMobile{
+    display: none;
+}
+
+.todoRodape{
+    display: none;
+}
+
+.primeiraColunaMobile{
+    display: none;
+}
+
+.segundaMobile{
+    display: none;
+}
+
+.tituloMobile{
+    display: none;
+}
+
+.ultimamargemMobile{
+    display: none;
+}
+.dentrodamargemMobile{
+    display: none;
+}
+.penultimaMobile{
+    display: none;
+}
+.ultimaMobile{
+    display: none;
+}
+
+.mobileRodape{
+    display: none;
+}
+
+.mobileUltimaMargem{
+    display: none;
+}
+
+/* margin-left: 143px; */
+
+@media screen and (max-width:400px){
+    *{
+        padding: 0;
+        margin: 0;   
+    }
+
+    .rodape{
+        display: none;
+    }
+
+    body{
+        background-color: #EAEDED;
+    }
+    
+    nav{
+        background-color: #131921;
+        height: 151px;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .duasImagens{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 79px;
+    }
+
+    .user{
+        margin-top: 8px;
+        height: 32px;
+    }
+
+    
+    #burguer2{
+        width: 23px;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        cursor: pointer;
+        margin-left: 14px;
+    }
+    
+    #burguer2 > div{
+        background-color: aliceblue;
+        height: 2px;
+        width: 60px;
+        border-radius: 15px;
+        transition: all ease-in.3s;
+        z-index: 999;
+    }
+    
+    #burguer2 > div:nth-child(2){
+        width: 20px;
+    }
+    
+    #burguer2 > div:nth-child(3){
+        width: 20px;
+    }
+    
+    #burguer2 > div:nth-child(1){
+        width: 20px;
+    }
+    
+    #burguer2:hover div{
+        width: 45;
+    }
+    
+    #burguer2.active > div:nth-child(1){
+        transform: rotate(50deg) translateY(10px);
+        width: 30px;
+        margin-top: 1px;
+    
+    }
+    
+    #burguer2.active > div:nth-child(2){
+        transform: rotate(-50deg) translateY(-10px);
+        width: 30px;
+        margin-top: 10px;
+    }
+    
+    #burguer2.active > div:nth-child(3){
+        opacity: 0;
+    }
+    
+    #menuMobile{
+        position: fixed;
+        width: 400px;
+        background: #fff;
+        transform: translateX(-100%);
+        transition: all linear .5s;
+        display: inline;
+    }
+    
+    #menuMobile.active{
+        transform: translateY(0);
+        margin-top: 164px;
+        height: 100vh;
+    }
+    
+    #menuMobile ul{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 200px;
+    }
+    
+    #menuMobile ul li{
+        padding: 20px;
+        border-bottom: 1px solid #f7f7f7;
+        width: 100%;
+        margin-bottom: -8px;
+    } 
+    #menuMobile ul li a{
+        text-decoration: none;
+    }
+    
+    .topbar{
+        display: block;
+        align-items: center;    
+    }
+
+
+    .logoInicio{
+        display: none;
+    }
+
+    .logoInicioMobile{
+        display: flex;
+    }
+
+    .texto2{
+        display: none;
+    }
+
+    .logoInicioMobile img{
+        margin-top: 2px;
+    }
+
+    .meio{
+        display: none;
+    }
+
+    .menu1{
+        display: none;
+    }
+
+    .menuPequeno1{
+        position: relative;
+        overflow-x: scroll;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fafafa;
+        width: 100%;
+        height: 35px;
+        align-items: center;
+        font-size: inherit;
+        position: fixed;
+        margin-top: 70px; 
+        margin-top: 18px;
+        font-family: "Amazon Ember",Arial,sans-serif; 
+    }
+
+    .letraPequeno1 a{
+        text-decoration: none;
+    }
+
+    .letraPequeno1{
+        height: 27px;
+        width: 100%;
+        white-space: nowrap;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .letraPequeno1 li{
+        padding: 0 15px;
+        color: #000000;
+    }
+
+    .primeiraParte{
+        display: flex;
+        flex-wrap: wrap;
+        height: 48px;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 97%;
+    }
+
+    .segundaParte{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        /* align-items: center; */
+    }
+
+    .box_pesquisa{
+        width: 88%;
+        border-radius: 9px;
+    }
+
+    sub{
+        display: none;
+    }
+
+    .divMaisVendidos{
+        display: flex;
+        flex-direction: column;
+        margin-right: 181px;
+    }
+
+    h1{
+        margin-top: 177px;
+        margin-left: 17px;
+    }
+
+    h2{
+        margin-left: 21px;
+        font-size: 29px;
+    }
+
+    .primeiraFileira{
+        margin-left: 0px;
+    }
+
+    .imagemUmVendidos{
+        width: 151px;
+    }
+
+    .imagemDoisVendidos{
+        width: 151px;
+    }
+
+    .valores1{
+        width: 351px;
+    }
+
+    .paraMargin{
+        margin-left: 0px;
+    }
+
+    .voltarinicio{
+        display: none;
+    }
+
+    .rodape3{
+        display: none;
+    }
+
+    .ultimamargem{
+        display: none;
+    }
+
+    .voltarinicioMobile{
+        background-color: #37475A;
+        height: 40px;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin-top: 7%;
+    }
+
+    .todoRodape ul{
+        margin-top: 10px;
+        display: flex;
+        font-size: large;
+        font-family: "Amazon Ember",Arial,sans-serif;
+        margin-left: 7px;
+        justify-content: space-between;
+    }
+    
+    .mobileRodape{
+        display: flex;
+        background-color: #455260;
+    }
+    
+    .mobileTitulo{
+        margin: 15px;
+        width: 194px;
+    }
+    
+    .mobileTitulo2{
+        margin: 15px;
+        width: 128px;
+    }
+    
+    .primeiraColunaMobile{
+    }
+    
+    .tituloMobile li{
+        color: #fff;
+    
+    }
+    
+    .voltarinicio{
+        display: none;
+    }
+    
+    .rodape{
+        display: none;
+        background-color: #232F3E;
+        width: 1200px;
+        margin: auto;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .conheca-nos{
+        display: none;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        list-style: none;
+        width: 45%;
+        padding: 20px 20px;
+        flex-direction: column; 
+        height: 100px;
+    }
+    
+    .titulo{
+        display: none;
+        font-weight: 600;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+    
+    .dindin{
+        display: none;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        list-style: none;
+        width: 50%;
+        padding: 20px 20px;
+        flex-direction: column; 
+        height: 100px;
+    }
+    
+    .choro{
+        display: none;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 20px 20px;
+        justify-content: space-between;
+        width: 50%;
+        align-items: left;
+        height: 100px;
+    }
+    
+    .help{
+        display: none;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 20px 20px;
+        justify-content: space-between;
+        width: 50%;
+        align-items: left;
+        height: 80px;
+        font-size: smaller;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+    
+    html{
+        font-size: 20px;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+    
+    .rodape2{
+        display: none;
+        background-color: #232F3E;
+        border-bottom: 1px solid #3A4553;
+    }
+    
+    .rodape3{
+        display: none;
+    
+    }
+    
+    .rodape3 img{
+        display: none;
+    }
+    
+    .quasefim{
+        display: none;
+    }
+    
+    .ultimamargem{
+        display: none;
+    }
+    
+    .penultima{
+        display: none;
+    }
+    
+    .ultima{
+        display: none;
+    }
+    
+    .dentrodamargemMobile li{
+        font-size: small;
+        color: #fff;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+    
+    .mobilePenultima{
+        font-size: small;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+    
+    .brpt{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .brpt li{
+        color: #cccccc;
+    }
+    
+    .mobileUltima2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infosUltimas{
+        display: flex;
+    }
+    
+    .infosUltimas li{
+        color: #cccccc;
+    
+    }
+    
+    .mobileUltimaMargem{
+        background-color: #131A22;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .mobileUltima{
+        margin-left: 23px;
+        font-size: 14px;
+    }
+    
+    .mobileUltima3{
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        color: #cccccc;
+    }
+    
+}
